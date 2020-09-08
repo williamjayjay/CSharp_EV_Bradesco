@@ -36,6 +36,7 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.lstTabuada = new System.Windows.Forms.ListBox();
+            this.btnAvancar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +74,7 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(286, 313);
+            this.btnVoltar.Location = new System.Drawing.Point(203, 313);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnVoltar.TabIndex = 9;
@@ -119,11 +120,22 @@
             this.lstTabuada.TabIndex = 13;
             this.lstTabuada.SelectedIndexChanged += new System.EventHandler(this.lstTabuada_SelectedIndexChanged);
             // 
+            // btnAvancar
+            // 
+            this.btnAvancar.Location = new System.Drawing.Point(297, 313);
+            this.btnAvancar.Name = "btnAvancar";
+            this.btnAvancar.Size = new System.Drawing.Size(75, 23);
+            this.btnAvancar.TabIndex = 14;
+            this.btnAvancar.Text = "Avançar";
+            this.btnAvancar.UseVisualStyleBackColor = true;
+            this.btnAvancar.Click += new System.EventHandler(this.btnAvancar_Click);
+            // 
             // Tabuada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.btnAvancar);
             this.Controls.Add(this.lstTabuada);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.btnLimpar);
@@ -149,5 +161,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.ListBox lstTabuada;
+        private System.Windows.Forms.Button btnAvancar;
     }
 }

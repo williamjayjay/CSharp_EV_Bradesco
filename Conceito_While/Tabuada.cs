@@ -53,5 +53,13 @@ namespace Conceito_While
         {
 
         }
+
+        private void btnAvancar_Click(object sender, EventArgs e)
+        {
+            Conceito_Do_While novo = new Conceito_Do_While();
+            novo.Show();
+
+            this.Visible = false;
+        }
     }
 }
